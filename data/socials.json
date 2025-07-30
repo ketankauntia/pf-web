@@ -1,0 +1,27 @@
+{
+    "socials": [
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/ketan-kauntia/"
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/ketan-kauntia"
+        },
+        {
+            "name": "x",
+            "url": "https://www.x.com/ketankauntia"
+        }
+    ],
+    "codingProfiles": {
+        "leetcode": {
+            "url": "https://leetcode.com/ketan-kauntia/"
+        },
+        "codingninjas": {
+            "url": "https://www.codingninjas.com/studio/profile/ketan-kauntia"
+        },
+        "geeksforgeeks": {
+            "url": "https://auth.geeksforgeeks.org/user/ketan_kauntia/practice"
+        }
+    }
+} 

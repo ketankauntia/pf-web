@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Full Stack Development Intern",
+        "company": "Technocollabs Software",
+        "startDate": "2024-01-15",
+        "endDate": "2024-03-15",
+        "mode": "Remote",
+        "orgImage": "technocollabs.png",
+        "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "JavaScript", "HTML", "CSS"],
+        "description": [
+            "Developed and optimized RESTful APIs for a scalable meal delivery platform using Node.js & Express.js.",
+            "Designed and managed a MongoDB Atlas database to efficiently handle 1000+ daily transactions.",
+            "Conducted API testing with Postman. Enforced data validation & error handling using Zod."
+        ]
+    },
+    {
+        "id": 2,
+        "title": "SDE Intern",
+        "startDate": "2024-04-01",
+        "endDate": "2024-07-31",
+        "company": "StockInsights.ai",
+        "mode": "Remote",
+        "orgImage": "stockinsights.png",
+        "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "JavaScript", "HTML", "CSS"],
+        "description": [
+            "Fixed a major UI bug enabling users to add more than 7 companies at a time",
+            "Implemented Cron jobs for new IN & US filings(IP, QR, 6K, 10K, 10Q, Proxy filings)",
+            "Reduced Amazon SES costs by ~80% (~50% on avg) + Improved UX experience",
+            "120%+ indexed pages on google alone by developing an automated sitemap generation service which handles daily and yearly sitemap creation, updation & file mgmt",
+            "Delivered a 100%+ growth in search impressions in ~15 days (GSC) by fixing seo issues, fixing thin content pages, CLS & LCS issues that affected page speeds.",
+            "Implemented an AI-powered summary component that streams GPT-generated JSON responses directly to the UI in real-time.",
+            "Translated Figma designs into pixel-perfect, responsive UI components for company profile pages.",
+            "Worked on SEO parameters, boosting the overall impressions by 1000%+ and visitors by 350%+ from Google Search alone in 3 months."
+        ]
+    }
+] 

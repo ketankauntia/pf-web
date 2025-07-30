@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
 
-## Getting Started
+A modern portfolio website built with Next.js, featuring a clean separation between data and components.
 
-First, run the development server:
+## 📁 Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+pf-web/
+├── app/                    # Next.js 13+ App Router
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Home page
+│   └── globals.css        # Global styles
+├── components/            # Reusable UI components
+│   ├── ExperienceItem.tsx # Individual experience item
+│   ├── Experience.tsx     # Experience section
+│   ├── Footer.tsx         # Footer component
+│   ├── Intro.tsx          # Introduction section
+│   ├── Projects.tsx       # Projects section
+│   └── Skills.tsx         # Skills section
+├── data/                  # JSON data files
+│   ├── personal.json      # Personal info, contact, resume
+│   ├── experience.json    # Work experience
+│   ├── projects.json      # Projects showcase
+│   ├── skills.json        # Technical skills
+│   ├── education.json     # Educational background
+│   ├── socials.json       # Social media links
+│   ├── coding-profiles.json # Coding platform profiles
+│   └── footer.json        # Footer information
+├── lib/                   # Utility functions
+│   └── data.ts            # Data loading functions
+├── types/                 # TypeScript type definitions
+│   └── portfolio.ts       # Portfolio data types
+└── public/                # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Run development server:**
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+## 📝 Data Management
 
-To learn more about Next.js, take a look at the following resources:
+### Why This Structure?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Separation of Concerns**: Data is separate from components
+- **Easy Updates**: Update JSON files without touching code
+- **Type Safety**: TypeScript interfaces ensure data consistency
+- **Maintainability**: Organized data files by domain
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### How to Update Data
 
-## Deploy on Vercel
+1. **Personal Information**: Edit `data/personal.json`
+2. **Experience**: Edit `data/experience.json`
+3. **Projects**: Edit `data/projects.json`
+4. **Skills**: Edit `data/skills.json`
+5. **Education**: Edit `data/education.json`
+6. **Social Links**: Edit `data/socials.json`
+7. **Coding Profiles**: Edit `data/coding-profiles.json`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Using Data in Components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```tsx
+import { getPersonalData, getExperienceData } from '@/lib/data';
+import { PersonalData, Experience } from '@/types/portfolio';
+
+export default function MyComponent() {
+  const personalData: PersonalData = getPersonalData();
+  const experiences: Experience[] = getExperienceData();
+  
+  return (
+    <div>
+      <h1>{personalData.intro.name}</h1>
+      {experiences.map((exp, index) => (
+        <div key={index}>
+          <h3>{exp.title} at {exp.company}</h3>
+          <p>{exp.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+```
+
+## 🏗️ Best Practices for Future Development
+
+### Component Naming
+- Use **PascalCase** for component files (e.g., `MyComponent.tsx`)
+- Use **camelCase** for utility files (e.g., `dataHelpers.ts`)
+
+### Data Organization
+- Keep related data in separate JSON files
+- Use descriptive names for data fields
+- Maintain consistent data structure across similar items
+
+### Type Safety
+- Define TypeScript interfaces in `types/portfolio.ts`
+- Import and use types in components
+- Update types when adding new data fields
+
+### File Organization
+- **Components**: Reusable UI components
+- **Data**: JSON files with content
+- **Lib**: Utility functions and helpers
+- **Types**: TypeScript type definitions
+- **Public**: Static assets (images, icons)
+
+## 📋 Adding New Data
+
+1. **Create JSON file** in `data/` directory
+2. **Add data loading function** in `lib/data.ts`
+3. **Define TypeScript types** in `types/portfolio.ts`
+4. **Use in components** with proper typing
+
+Example:
+```tsx
+// 1. Add to lib/data.ts
+export const getTestimonialsData = () => testimonialsData;
+
+// 2. Add to types/portfolio.ts
+export interface Testimonial {
+  name: string;
+  role: string;
+  content: string;
+}
+
+// 3. Use in component
+const testimonials: Testimonial[] = getTestimonialsData();
+```
+
+This structure makes your portfolio easy to maintain and update! 🎉
