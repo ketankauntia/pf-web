@@ -2,26 +2,26 @@
     "socials": [
         {
             "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/ketan-kauntia/"
+            "url": "https://www.linkedin.com/in/ketankauntia/"
         },
         {
             "name": "GitHub",
-            "url": "https://github.com/ketan-kauntia"
+            "url": "https://github.com/ketankauntia"
         },
         {
             "name": "x",
-            "url": "https://www.x.com/ketankauntia"
+            "url": "https://x.com/kauntiaketan"
         }
     ],
     "codingProfiles": {
         "leetcode": {
-            "url": "https://leetcode.com/ketan-kauntia/"
+            "url": "https://leetcode.com/u/ketankauntia"
         },
         "codingninjas": {
-            "url": "https://www.codingninjas.com/studio/profile/ketan-kauntia"
+            "url": "https://www.naukri.com/code360/profile/ketankauntia"
         },
         "geeksforgeeks": {
-            "url": "https://auth.geeksforgeeks.org/user/ketan_kauntia/practice"
+            "url": "https://www.geeksforgeeks.org/user/ketankauntia/"
         }
     }
 } 
