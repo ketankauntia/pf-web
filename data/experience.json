@@ -6,8 +6,9 @@
         "startDate": "2024-01-15",
         "endDate": "2024-03-15",
         "mode": "Remote",
+        "orgLink": "https://www.technocollabs.com/",
         "orgImage": "technocollabs.png",
-        "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "JavaScript", "HTML", "CSS"],
+        "stack": ["React.js", "Node.js", "Tailwind", "JavaScript", "HTML", "CSS"],
         "description": [
             "Developed and optimized RESTful APIs for a scalable meal delivery platform using Node.js & Express.js.",
             "Designed and managed a MongoDB Atlas database to efficiently handle 1000+ daily transactions.",
@@ -21,8 +22,9 @@
         "endDate": "2024-07-31",
         "company": "StockInsights.ai",
         "mode": "Remote",
+        "orgLink": "https://stockinsights.ai/",
         "orgImage": "stockinsights.png",
-        "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "JavaScript", "HTML", "CSS"],
+        "stack": ["TypeScript", "Next.js","Python", "Tailwind", "AWS S3"],
         "description": [
             "Fixed a major UI bug enabling users to add more than 7 companies at a time",
             "Implemented Cron jobs for new IN & US filings(IP, QR, 6K, 10K, 10Q, Proxy filings)",

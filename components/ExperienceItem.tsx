@@ -1,5 +1,6 @@
 import { Experience } from '@/types/portfolio';
 import Image from 'next/image';
+import Link from 'next/link';
 import { SkillItemSingle } from './SkillItem';
 
 interface ExperienceItemProps {
@@ -11,14 +12,21 @@ export default function ExperienceItem({ experience }: ExperienceItemProps) {
     <div className="experience-item flex gap-4 mb-8 p-4">
       {/* left container -> org image */}
       <div className="experience-item-left-img flex-shrink-0">
-        <div className="w-16 h-16 flex items-center justify-center  rounded-lg overflow-hidden">
-          <Image 
-            src={`/org-images/${experience.orgImage}`} 
-            alt={experience.company} 
-            width={48} 
-            height={48}
-            className="object-contain w-12 h-12"
-          />
+        <div className="w-16 h-16 flex items-center justify-center rounded-lg overflow-hidden">
+          <Link 
+            href={experience.orgLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-full h-full hover:opacity-80 transition-opacity"
+          >
+            <Image 
+              src={`/org-images/${experience.orgImage}`} 
+              alt={experience.company} 
+              width={48} 
+              height={48}
+              className="object-contain w-12 h-12"
+            />
+          </Link>
         </div>
       </div>
       {/* right container -> text */}

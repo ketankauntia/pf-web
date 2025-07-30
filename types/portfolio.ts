@@ -21,6 +21,7 @@ export interface PersonalData {
 
 // Experience Types
 export interface Experience {
+  orgLink: string;
   id: number;
   title: string;
   company: string;
