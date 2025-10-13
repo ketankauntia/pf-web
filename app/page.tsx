@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="main-container w-1/2 mx-auto mb-20">
+    <div className="main-container w-full px-6 md:w-2/3 lg:w-1/2 mx-auto mb-20">
       <Header />
       <Intro /> 
       <Stack />

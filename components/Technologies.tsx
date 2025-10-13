@@ -40,14 +40,14 @@ const techCategories = {
 
 export default function Technologies() {
     return (
-        <div className="technologies-section mt-20">
-            <h2 className="text-2xl font-semibold mb-8">technologies i&apos;ve worked with:</h2>
+        <div className="technologies-section mt-12 md:mt-20">
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8">technologies i&apos;ve worked with:</h2>
             
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
                 {Object.entries(techCategories).map(([category, techs]) => (
                     <div key={category}>
-                        <h3 className="text-lg text-gray-400 mb-4">{category}</h3>
-                        <div className="flex gap-3 flex-wrap">
+                        <h3 className="text-base md:text-lg text-gray-400 mb-3 md:mb-4">{category}</h3>
+                        <div className="flex gap-2 md:gap-3 flex-wrap">
                             {techs.map((tech, idx) => (
                                 <Button key={idx} text={tech.name} icon={tech.icon} />
                             ))}

@@ -9,20 +9,22 @@ export default function GitHubHeatmap() {
     const years = [currentYear, currentYear - 1, currentYear - 2, currentYear - 3];
 
     return (
-        <div className="github-heatmap-section mt-20">
-            <div className="heatmap-container border border-gray-800 rounded-lg p-8">
-                <GitHubCalendar 
-                    username="ketankauntia"
-                    colorScheme="dark"
-                    blockSize={12}
-                    fontSize={14}
-                    year={selectedYear === 'last12months' ? undefined : selectedYear}
-                />
+        <div className="github-heatmap-section mt-8 md:mt-12">
+            <div className="heatmap-container py-6 ">
+                <div className="overflow-x-auto heatmap-scroll">
+                    <GitHubCalendar 
+                        username="ketankauntia"
+                        colorScheme="dark"
+                        blockSize={10}
+                        fontSize={12}
+                        year={selectedYear === 'last12months' ? undefined : selectedYear}
+                    />
+                </div>
                 
-                <div className="year-filters flex gap-3 mt-6 justify-center">
+                <div className="year-filters flex gap-2 md:gap-3 mt-6 justify-center flex-wrap">
                     <button
                         onClick={() => setSelectedYear('last12months')}
-                        className={`px-4 py-2 rounded-lg border transition-colors ${
+                        className={`px-3 py-1.5 md:px-4 md:py-2 rounded-lg border transition-colors text-sm md:text-base ${
                             selectedYear === 'last12months' 
                                 ? 'border-white bg-white text-black' 
                                 : 'border-gray-700 hover:border-gray-500'
@@ -34,7 +36,7 @@ export default function GitHubHeatmap() {
                         <button
                             key={year}
                             onClick={() => setSelectedYear(year)}
-                            className={`px-4 py-2 rounded-lg border transition-colors ${
+                            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-lg border transition-colors text-sm md:text-base ${
                                 selectedYear === year 
                                     ? 'border-white bg-white text-black' 
                                     : 'border-gray-700 hover:border-gray-500'

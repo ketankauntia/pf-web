@@ -46,3 +46,28 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
+
+/* Custom Scrollbar for GitHub Heatmap */
+.heatmap-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.heatmap-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.heatmap-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.heatmap-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Firefox scrollbar */
+.heatmap-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
+}
