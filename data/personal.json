@@ -1,13 +1,13 @@
 {
-    "intro": {
-        "name": "Ketan Kauntia",
-        "tagline": "Passionate. Curious. Creative.",
-        "description": " sinchan dekta hu :D"
-    },
-    "contact": {
-        "email": "pqrst@gmail.com"
-    },
-    "resume": {
-        "url": "https://www.resume.com/ketan-kauntia"
-    }
-} 
+  "intro": {
+    "name": "Ketan Kauntia",
+    "tagline": "Passionate. Curious. Creative.",
+    "description": ["I'm a 23-year-old dev based in India.", "I have 7+ years of SEO experience. Currently working on fullstack systems, RAG and Ai Agents", "Apart from this, i love playing basketball, cook great food and build muscles"]
+  },
+  "contact": {
+    "email": "ketankauntia26@gmail.com"
+  },
+  "resume": {
+    "url": "https://ketankauntia.vercel.app/"
+  }
+}

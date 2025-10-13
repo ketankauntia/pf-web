@@ -1,22 +1,6 @@
 [
     {
         "id": 1,
-        "title": "Full Stack Development Intern",
-        "company": "Technocollabs Software",
-        "startDate": "2024-01-15",
-        "endDate": "2024-03-15",
-        "mode": "Remote",
-        "orgLink": "https://www.technocollabs.com/",
-        "orgImage": "technocollabs.png",
-        "stack": ["React.js", "Node.js", "Tailwind", "JavaScript", "HTML", "CSS"],
-        "description": [
-            "Developed and optimized RESTful APIs for a scalable meal delivery platform using Node.js & Express.js.",
-            "Designed and managed a MongoDB Atlas database to efficiently handle 1000+ daily transactions.",
-            "Conducted API testing with Postman. Enforced data validation & error handling using Zod."
-        ]
-    },
-    {
-        "id": 2,
         "title": "SDE Intern",
         "startDate": "2024-04-01",
         "endDate": "2024-07-31",
@@ -24,7 +8,7 @@
         "mode": "Remote",
         "orgLink": "https://stockinsights.ai/",
         "orgImage": "stockinsights.png",
-        "stack": ["TypeScript", "Next.js","Python", "Tailwind", "AWS S3"],
+        "stack": ["TypeScript", "Next.js","Python", "TailwindCSS", "AWS"],
         "description": [
             "Fixed a major UI bug enabling users to add more than 7 companies at a time",
             "Implemented Cron jobs for new IN & US filings(IP, QR, 6K, 10K, 10Q, Proxy filings)",
@@ -34,6 +18,21 @@
             "Implemented an AI-powered summary component that streams GPT-generated JSON responses directly to the UI in real-time.",
             "Translated Figma designs into pixel-perfect, responsive UI components for company profile pages.",
             "Worked on SEO parameters, boosting the overall impressions by 1000%+ and visitors by 350%+ from Google Search alone in 3 months."
+        ]
+    },{
+        "id": 2,
+        "title": "Full Stack Development Intern",
+        "company": "Technocollabs Software",
+        "startDate": "2024-01-15",
+        "endDate": "2024-03-15",
+        "mode": "Remote",
+        "orgLink": "https://www.technocollabs.com/",
+        "orgImage": "technocollabs.png",
+        "stack": ["React", "Node.js", "TailwindCSS", "JavaScript", "HTML5", "CSS3"],
+        "description": [
+            "Developed and optimized RESTful APIs for a scalable meal delivery platform using Node.js & Express.js.",
+            "Designed and managed a MongoDB Atlas database to efficiently handle 1000+ daily transactions.",
+            "Conducted API testing with Postman. Enforced data validation & error handling using Zod."
         ]
     }
 ] 

@@ -12,7 +12,9 @@
     "@vercel/analytics": "^1.5.0",
     "next": "15.4.5",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-activity-calendar": "^2.6.3",
+    "react-dom": "19.1.0",
+    "react-github-calendar": "^4.5.11"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

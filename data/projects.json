@@ -5,7 +5,7 @@
         "description": [
             "Automated Google Meet recording by launching a Chrome instance with Selenium webdriver"," Requests to join the meet and then start to record(video + audio) and saves the mp4 recording locally.."
         ],
-        "stack": ["Node.js", "Express.js", "Selenium", "typescript","webrtc"],
+        "stack": ["Node.js", "express", "Selenium", "typescript","webrtc"],
         "githubLink": "https://github.com/ketankauntia/Meeting-Sumarizer-ai",
         "previewLink": "NA"
     },
@@ -16,7 +16,7 @@
             "A real-time collaborative code editor using WebSockets, enabling seamless multi-user peer coding.",
             "Backend on Express.js for sessions & rooms. CodeMirror for syntax highlighting and theming."
         ],
-        "stack": ["React.js", "Node.js", "Express.js", "Socket.io"],
+        "stack": ["React", "Node.js", "express", "Socket.io"],
         "githubLink": "https://github.com/ketankauntia/codeSync",
         "previewLink": "NA"
     }

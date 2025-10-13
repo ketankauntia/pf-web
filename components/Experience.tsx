@@ -1,25 +1,41 @@
-import { getExperienceData } from '@/lib/data';
-import { Experience } from '@/types/portfolio';
-import ExperienceItem from './ExperienceItem';
+import experienceData from '@/data/experience.json';
+import Button from '@/lib/Button';
 
-export default function ExperienceSection() {
-  const experiences: Experience[] = getExperienceData();
-  
-  // Sort experiences by date (latest first)
-  const sortedExperiences = experiences.sort((a, b) => {
-    const dateA = new Date(a.startDate);
-    const dateB = new Date(b.startDate);
-    return dateB.getTime() - dateA.getTime();
-  });
-
-  return (
-    <section className="experience-section">
-      <h2 className="text-3xl font-bold mb-6">Experience</h2>
-      <div className="experience-list">
-        {sortedExperiences.map((experience) => (
-          <ExperienceItem key={experience.id} experience={experience} />
-        ))}
-      </div>
-    </section>
-  );
+export default function Experience() {
+    return (
+        <div className="experience-section mt-16">
+            <h2 className="text-2xl font-semibold mb-8">Experiences:</h2>
+            
+            <div className="space-y-12">
+                {experienceData.map((exp) => (
+                    <div key={exp.id} className="experience-item">
+                        <div className="flex justify-between items-start mb-3">
+                            <div className="flex items-center gap-3">
+                                <h3 className="text-xl font-medium">{exp.company}</h3>
+                                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                            </div>
+                            <p className="text-gray-400">
+                                {new Date(exp.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} – {exp.endDate === 'present' ? 'present' : new Date(exp.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                            </p>
+                        </div>
+                        
+                        <p className="text-gray-400 italic mb-4">{exp.title}</p>
+                        
+                        <div className="space-y-2 mb-4">
+                            {exp.description.map((desc, idx) => (
+                                <p key={idx} className="text-gray-300">- {desc}</p>
+                            ))}
+                        </div>
+                        
+                        <div className="flex gap-2 flex-wrap">
+                            {exp.stack.map((tech, idx) => (
+                                <Button key={idx} text={tech} icon={`${tech.toLowerCase().replace('.', '').replace(' ', '')}.svg`} />
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 }
+
